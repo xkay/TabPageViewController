@@ -249,14 +249,14 @@ extension TabView {
             if !isInfinity {
                 currentBarViewLeftConstraint?.constant = cell.frame.origin.x
             }
-            UIView.animate(withDuration: 0.2, animations: {
-                self.layoutIfNeeded()
-                }, completion: { _ in
+            UIView.animate(withDuration: 0.2, animations: { [weak self] in
+                self?.layoutIfNeeded()
+                }, completion: { [weak self] _ in
                     if !animated && shouldScroll {
                         cell.isCurrent = true
                     }
                     
-                    self.updateCollectionViewUserInteractionEnabled(true)
+                    self?.updateCollectionViewUserInteractionEnabled(true)
             })
         }
         beforeIndex = currentIndex

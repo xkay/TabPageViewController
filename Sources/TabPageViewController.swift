@@ -270,8 +270,8 @@ extension TabPageViewController {
 
         if option.hidesTopViewOnSwipeType != .none {
             tabBarTopConstraint.constant = 0.0
-            UIView.animate(withDuration: TimeInterval(UINavigationControllerHideShowBarDuration)) {
-                self.view.layoutIfNeeded()
+            UIView.animate(withDuration: TimeInterval(UINavigationControllerHideShowBarDuration)) { [weak self] in
+                self?.view.layoutIfNeeded()
             }
         }
 
@@ -283,8 +283,8 @@ extension TabPageViewController {
         guard let tabBarTopConstraint = tabBarTopConstraint else { return }
 
         tabBarTopConstraint.constant = hidden ? -(20.0 + option.tabHeight) : 0.0
-        UIView.animate(withDuration: TimeInterval(UINavigationControllerHideShowBarDuration)) {
-            self.view.layoutIfNeeded()
+        UIView.animate(withDuration: TimeInterval(UINavigationControllerHideShowBarDuration)) { [weak self] in
+            self?.view.layoutIfNeeded()
         }
     }
 }
