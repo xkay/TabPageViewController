@@ -17,7 +17,7 @@ open class TabPageViewController: UIPageViewController {
         guard let viewController = viewControllers?.first else {
             return nil
         }
-        return tabItems.map{ $0.viewController }.index(of: viewController)
+        return tabItems.map { $0.viewController }.index(of: viewController)
     }
     fileprivate var beforeIndex: Int = 0
     fileprivate var tabItemsCount: Int {
@@ -253,9 +253,14 @@ extension TabPageViewController {
             } else {
                 showNavigationBar()
             }
-        default:
+        
+        case .tabHeader:
+            // TODO: make header disappearing animation
+            break
+        case .none:
             break
         }
+        
         if statusView == nil {
             setupStatusView()
         }

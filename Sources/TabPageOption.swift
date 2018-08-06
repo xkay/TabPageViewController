@@ -12,6 +12,7 @@ public enum HidesTopContentsOnSwipeType {
     case none
     case tabBar
     case navigationBar
+    case tabHeader
     case all
 }
 
