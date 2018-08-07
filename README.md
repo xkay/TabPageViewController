@@ -9,7 +9,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/matteocrippa/awesome-swift#utility)
 
 ## Note
-This is forked from the original repo with my personal additions.
+This is forked from the original repo with my personal additions of a tab header.
 
 ## Description
 
@@ -109,27 +109,14 @@ iOS8+
 
 ## Installation
 
-### Using CocoaPods
-
-```ruby
-use_frameworks!
-pod "TabPageViewController"
-```
-
-### Using Carthage
-
-```ruby
-github "EndouMari/TabPageViewController"
-
-```
 ### Manually
 Copy all the files in `Pod/Classes` directory into your project.
-
 
 
 ## Author
 
 EndouMari, endo@vasily.jp
+xkay, xkay0626@gmail.com
 
 ## License
 
