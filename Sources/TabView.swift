@@ -63,7 +63,7 @@ internal class TabView: UIView {
             multiplier: 1.0,
             constant: 0.0)
 
-        let bottom = NSLayoutConstraint (item: self,
+        let bottom = NSLayoutConstraint(item: self,
             attribute: .bottom,
             relatedBy: .equal,
             toItem: contentView,

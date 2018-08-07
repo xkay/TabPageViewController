@@ -12,6 +12,7 @@ public enum HidesTopContentsOnSwipeType {
     case none
     case tabBar
     case navigationBar
+    case tabHeader
     case all
 }
 
@@ -27,7 +28,7 @@ public struct TabPageOption {
     public var tabWidth: CGFloat?
     public var currentBarHeight: CGFloat = 2.0
     public var tabBackgroundColor: UIColor = .white
-    public var pageBackgoundColor: UIColor = UIColor.white
+    public var pageBackgoundColor: UIColor = .white
     public var isTranslucent: Bool = true
     public var hidesTopViewOnSwipeType: HidesTopContentsOnSwipeType = .none
 
